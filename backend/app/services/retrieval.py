@@ -12,8 +12,8 @@ from app.db import run
 # Words in the customer's message that point to a policy category.
 # A word matches if the message contains a word that starts with it ("deliver" matches "delivered").
 CATEGORY_KEYWORDS = {
-    "refund": ["refund", "money", "reimburs", "broken", "damage", "defect", "faulty"],
-    "return": ["return", "exchange", "replace", "broken", "damage", "defect", "faulty", "wrong", "leak"],
+    "refund": ["refund", "money", "reimburs", "broken", "damage", "defect", "faulty", "return"],
+    "return": ["return", "exchange", "replace", "broken", "damage", "defect", "faulty", "wrong", "leak", "refund", "money"],
     "shipping": ["ship", "deliver", "arriv", "receiv", "track", "delay"],
     "cancellation": ["cancel"],
 }
